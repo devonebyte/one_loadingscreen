@@ -1,0 +1,56 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    background: linear-gradient(135deg, #000000, #1a1a1a); /* Tmavý gradient */  
+    color: #ffcc00; /* Neonově žlutá */  
+    font-family: 'Arial', sans-serif;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+}  
+
+.loading-screen {  
+    text-align: center;  
+    opacity: 0.95; /* Poloviční průhlednost */  
+}  
+
+.logo {  
+    width: 200px; /* Velikost loga */  
+    margin-bottom: 20px;  
+    animation: fadeIn 1s ease-in; /* Fade in animace pro logo */  
+}  
+
+h1 {  
+    font-size: 48px; /* Větší písmo pro název */  
+    margin: 0;  
+    font-weight: bold;  
+    text-shadow: 0 0 20px rgba(255, 204, 0, 1), 0 0 30px rgba(255, 204, 0, 0.5); /* Neonový efekt */  
+}  
+
+p {  
+    font-size: 24px;  
+    margin-top: 10px;  
+    text-shadow: 0 0 10px rgba(255, 204, 0, 1), 0 0 20px rgba(255, 204, 0, 0.5);  
+}  
+
+.spinner {  
+    width: 60px; /* Větší spinner */  
+    height: 60px;  
+    border: 6px solid rgba(255, 204, 0, 0.3);  
+    border-top: 6px solid #ffcc00;  
+    border-radius: 50%;  
+    animation: spin 1.5s linear infinite; /* Zrychlená animace */  
+    margin: 20px auto; /* Středění */  
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5), 0 0 30px rgba(255, 204, 0, 0.5); /* Neonový efekt */  
+}  
+
+@keyframes spin {  
+    0% { transform: rotate(0deg); }  
+    100% { transform: rotate(360deg); }  
+}  
+
+@keyframes fadeIn {  
+    from { opacity: 0; }  
+    to { opacity: 1; }  
+}
